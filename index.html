@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Test (WPM)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>⚡ TypeRacer Clone</h1>
+            <p>Uji kecepatan dan akurasi mengetikmu dalam 60 detik!</p>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <span class="stat-value" id="live-wpm">0</span>
+                <span class="stat-label">WPM (Kecepatan)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="live-timer">60s</span>
+                <span class="stat-label">Sisa Waktu</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="live-accuracy">100%</span>
+                <span class="stat-label">Akurasi</span>
+            </div>
+        </div>
+
+        <div class="text-display-box" id="text-display">
+            </div>
+
+        <div class="input-container">
+            <textarea id="typing-input" placeholder="Klik tombol 'Mulai Kontes' di bawah untuk mengetik..." disabled></textarea>
+        </div>
+
+        <div class="control-box">
+            <button id="start-btn" class="btn-primary">Mulai Kontes 🚀</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
